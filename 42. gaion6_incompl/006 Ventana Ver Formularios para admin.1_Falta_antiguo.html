@@ -1,0 +1,3838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crear Reporte</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/jquery-accordion-menu.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="Header">
+    <div class="container">
+      <div class="row">
+        <div class="Header-menu">
+          <i class="fa fa-1x fa-bars mr-3" aria-hidden="true"></i>
+          <figure>
+            <img src="" alt="">
+          </figure>
+          <ul>
+            <li>Daniel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="container-nav-down">
+    <div id="jquery-accordion-menu" class="jquery-accordion-menu">
+      <div class="jquery-accordion-menu-header">
+        <span>Menu</span>
+        <i class="fa fa-2x fa-angle-left" aria-hidden="true" id="menu-toggle"></i>
+      </div>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span>Inicio</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-user-plus"> </i>
+            <span>Agregar usuario</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-user-plus"> </i>
+            <span>Modificar usuario</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa fa-list-ul"> </i>
+            <span>Ver usuarios</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="#">
+            <i class="fa fa-star"> </i>
+            <span>Ver formularios</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-star"> </i>
+            <span>Ver reportes</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-list-ul"> </i>
+            <span>Ver formularios en mapa</span>
+          </a>
+        </li>
+      </ul>
+      <div class="jquery-accordion-menu-footer">
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="container-down">
+    <section id="container-main" class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="display-4 title">Formularios</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <form class="">
+            <div class="form-group col-xs-4">
+              <label for="exampleInputEmail1">Provincia</label>
+              <select class="form-control">
+                <option>Provincia 1</option>
+                <option>Provincia 2</option>
+                <option>Provincia 3</option>
+                <option>Provincia 4</option>
+                <option>Provincia 5</option>
+              </select>
+            </div>
+            <div class="form-group col-xs-4">
+              <label for="exampleInputEmail1">Localidad</label>
+              <select class="form-control">
+                <option>Localidad 1</option>
+                <option>Localidad 2</option>
+                <option>Localidad 3</option>
+                <option>Localidad 4</option>
+                <option>Localidad 5</option>
+              </select>
+            </div>
+            <div class="form-group col-xs-4">
+              <label for="exampleInputEmail1">Desde</label>
+              <div class="form-group">
+                <div class='input-group date' id='datetimepicker9'>
+                  <input type='date' class="form-control" />
+                  <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar">
+                    </span>
+                  </span>
+                </div>
+              </div>
+
+            </div>
+            <div class="form-group col-xs-4">
+              <label for="exampleInputEmail1">Tipo Formulario</label>
+              <select class="form-control">
+                <option>Tipo 1</option>
+                <option>Tipo 2</option>
+                <option>Tipo 3</option>
+                <option>Tipo 4</option>
+                <option>Tipo 5</option>
+              </select>
+            </div>
+            <div class="form-group col-xs-4">
+              <label for="exampleInputEmail1">Estado</label>
+              <select class="form-control">
+                <option>Todos</option>
+                <option>Validado</option>
+                <option>No Validado</option>
+              </select>
+            </div>
+            <div class="form-group col-xs-4">
+              <label for="exampleInputEmail1">Hasta</label>
+              <div class="form-group">
+                <div class='input-group date' id='datetimepicker9'>
+                  <input type='date' class="form-control" />
+                  <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar">
+                    </span>
+                  </span>
+                </div>
+              </div>
+
+
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th> </th>
+                <th>#</th>
+                <th>Nombre\Localidad</th>
+                <th>Usuario</th>
+                <th>Tipo</th>
+                <th>Tamaño</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="reporteEspecifico1 reportEs">
+                <th scope="row">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </th>
+                <th scope="row">1</th>
+                <td>Formato_De_Pruebas_De_Calidad_De_La_Red_De_Acceso</td>
+                <td>Oscar</td>
+                <td>Tipo 1</td>
+                <td>40</td>
+                <td>Validado</td>
+              </tr>
+              <tr class="reporteEspecifico2 reportEs">
+                <th scope="row">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </th>
+                <th scope="row">2</th>
+                <td>Formato_De_Pruebas_De_Calidad_De_La_Red_De_TRANSPORTE</td>
+                <td>Lu01</td>
+                <td>Tipo 1</td>
+                <td>40</td>
+                <td>Validado</td>
+              </tr>
+              <tr class="reporteEspecifico3 reportEs">
+                <th scope="row">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </th>
+                <th scope="row">3</th>
+                <td>01_FORMULARIO_DE_ENTRADA_DE_SISTEMA_DE_ENERGIA_red_transporte</td>
+                <td>Ca01</td>
+                <td>Tipo 1</td>
+                <td>40</td>
+                <td>Validado</td>
+              </tr>
+              <tr class="reporteEspecifico4 reportEs">
+                <th scope="row">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </th>
+                <th scope="row">4</th>
+                <td>02_PRUEBAS_DE_OPERATIVIDAD_red_transporte </td>
+                <td>Ca01</td>
+                <td>Tipo 1</td>
+                <td>40</td>
+                <td>Validado</td>
+              </tr>
+              <tr class="reporteEspecifico5 reportEs">
+                <th scope="row">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </th>
+                <th scope="row">5</th>
+                <td> 01_FORMOLARIO_DE_ENTRADA_DE_RED_DE_ACCESO__</td>
+                <td>Ca01</td>
+                <td>Tipo 1</td>
+                <td>40</td>
+                <td>Validado</td>
+              </tr>
+              <tr class="reporteEspecifico6 reportEs">
+                <th scope="row">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </th>
+                <th scope="row">6</th>
+                <td>02_FORMULARIO_DE_ENTRADA_2_RED_DE_ACCESO__ </td>
+                <td>Ca01</td>
+                <td>Tipo 1</td>
+                <td>40</td>
+                <td>Validado</td>
+              </tr>
+
+              <tr class="reporteEspecifico7 reportEs">
+                <th scope="row">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </th>
+                <th scope="row">7</th>
+                <td>03_FORMULARIO_3_DE_ENTRADA_RED_DE_ACCESO_</td>
+                <td>Ca01</td>
+                <td>Tipo 1</td>
+                <td>40</td>
+                <td>Validado</td>
+              </tr>
+              <tr class="reporteEspecifico8">
+                <th scope="row">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </th>
+                <th scope="row">8</th>
+                <td> 001_formulario_de_entrada_1_red_Transporte</td>
+                <td>Ca01</td>
+                <td>Tipo 1</td>
+                <td>40</td>
+                <td>Validado</td>
+              </tr>
+              <tr class="reporteEspecifico9">
+                <th scope="row">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </th>
+                <th scope="row">9</th>
+                <td> 002_formulario_de_entrada_2_red_Transporte</td>
+                <td>Ca01</td>
+                <td>Tipo 1</td>
+                <td>40</td>
+                <td>Validado</td>
+              </tr>
+              <tr class="reporteEspecifico10">
+                <th scope="row">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </th>
+                <th scope="row">10</th>
+                <td> 003_formulario_de_entrada_3_ed_Transporte </td>
+                <td>Ca01</td>
+                <td>Tipo 1</td>
+                <td>40</td>
+                <td>Validado</td>
+              </tr>
+              <tr class="reporteEspecifico11">
+                <th scope="row">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </th>
+                <th scope="row">11</th>
+                <td>PRUEBAS_DE_SERVICIOS_DE_LA_RED_DE_ACCESO_EN_INSTITUDIONES </td>
+                <td>Ca01</td>
+                <td>Tipo 1</td>
+                <td>40</td>
+                <td>Validado</td>
+              </tr>
+              <tr class="reporteEspecifico12">
+                <th scope="row">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </th>
+                <th scope="row">12</th>
+                <td> Formulario_de_entrada_de_red_de_fibra_optica</td>
+                <td>Ca01</td>
+                <td>Tipo 1</td>
+                <td>40</td>
+                <td>Validado</td>
+              </tr>
+              <tr class="reporteEspecifico13">
+                <th scope="row">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </th>
+                <th scope="row">13</th>
+                <td> PROTOCOLO_DE_PRUEBAS_DE_ATENUACION_DE_FIBRA_OPTICA_V2 </td>
+                <td>Ca01</td>
+                <td>Tipo 1</td>
+                <td>40</td>
+                <td>Validado</td>
+              </tr>
+              <tr class="reporteEspecifico14">
+                <th scope="row">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </th>
+                <th scope="row">14</th>
+                <td> Protocolo_de_pruebas_de_Sistema_IP_V2 </td>
+                <td>Ca01</td>
+                <td>Tipo 1</td>
+                <td>40</td>
+                <td>Validado</td>
+              </tr>
+              <tr class="reporteEspecifico15">
+                <th scope="row">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </th>
+                <th scope="row">15</th>
+                <td> PRUEBAS_DE_EQUIPOS_DE_TRANSPORTE_V2 </td>
+                <td>Ca01</td>
+                <td>Tipo 1</td>
+                <td>40</td>
+                <td>Validado</td>
+              </tr>
+              <tr class="reporteEspecifico16">
+                <th scope="row">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </th>
+                <th scope="row">16</th>
+                <td> Pruebas_generales_de_equipos_IP_V2 </td>
+                <td>Ca01</td>
+                <td>Tipo 1</td>
+                <td>40</td>
+                <td>Validado</td>
+              </tr>
+              <tr class="reporteEspecifico17">
+                <th scope="row">
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </th>
+                <th scope="row">17</th>
+                <td> ReportCamp </td>
+                <td>Ca01</td>
+                <td>Tipo 1</td>
+                <td>40</td>
+                <td>Validado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="form-group col-xs-12 text-center">
+        <button type="submit" class="btn btn-default">Permitir visualizacion</button>
+      </div>
+    </section>
+  </section>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".reporteEspecifico1 td").click(function () {
+        $("#myModal").modal('show');
+      });
+
+      $(".reporteEspecifico2 td").click(function () {
+        $("#myModal2").modal('show');
+      });
+      $(".reporteEspecifico3 td").click(function () {
+        $("#myModal3").modal('show');
+      });
+
+
+    });
+  </script>
+
+
+  <!-- Calendario-->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#datetimepicker9').datetimepicker({
+        viewMode: 'years'
+      });
+    });
+  </script>
+
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">REGION CAJAMARCA</h4>
+          <h4 class="modal-title text-center">Formato de Pruebas de Calidad de la Red de Acceso</h4>
+        </div>
+
+        <div class="modal-body clearfix">
+
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <!--***************1RA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    RED DE ACCESO
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <div class="form-group col-xs-12 text-center">
+                    <p>RED DE ACCESO </p>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <p>Prueba de calidad del enlace: </p>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label for="exampleInputEmail1">Nodo A: </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
+                  </div>
+                  <div class="form-group col-xs-6">
+                    <label for="exampleInputEmail1">Localidad: </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Localidad">
+                  </div>
+                  <div class="form-group col-xs-6">
+                    <label for="exampleInputEmail1">Distrito: </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Distrito">
+                  </div>
+                  <div class="form-group col-xs-6">
+                    <label for="exampleInputEmail1">Provincia: </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Provincia">
+                  </div>
+                  <div class="form-group col-xs-12 text-center">
+                    <h4>Tipo de Nodo</h4>
+                  </div>
+
+                  <div class="form-group col-xs-12">
+                    <div class="checkbox col-xs-4">
+                      <label>
+                        <input type="checkbox"> Distrital
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-4">
+                      <label>
+                        <input type="checkbox"> Intermedio
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-4">
+                      <label>
+                        <input type="checkbox"> Terminal
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 separador"></div>
+                  <div class="form-group col-xs-12">
+                    <label for="exampleInputEmail1">Nodo B: </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
+                  </div>
+                  <div class="form-group col-xs-6">
+                    <label for="exampleInputEmail1">Localidad: </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Localidad">
+                  </div>
+                  <div class="form-group col-xs-6">
+                    <label for="exampleInputEmail1">Distrito: </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Distrito">
+                  </div>
+                  <div class="form-group col-xs-6">
+                    <label for="exampleInputEmail1">Provincia: </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Provincia">
+                  </div>
+                  <div class="form-group col-xs-12 text-center">
+                    <h4>Tipo de Nodo</h4>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="checkbox col-xs-4">
+                      <label>
+                        <input type="checkbox"> Distrital
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-4">
+                      <label>
+                        <input type="checkbox"> Intermedio
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-4">
+                      <label>
+                        <input type="checkbox"> Terminal
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-xs-3">
+                    <p>
+                      <label for="exampleInputEmail1">Equipo lado A: </label>
+                  </div>
+                  <div class="form-group col-xs-8">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre"> </p>
+                  </div>
+                  <div class="form-group col-xs-3">
+                    <label for="exampleInputEmail1">Equipo lado B: </label>
+                  </div>
+                  <div class="form-group col-xs-8">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre"> </p>
+                  </div>
+
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">Simetria Enlace: </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-3">
+                    <p>
+                      <label for="exampleInputEmail1">Fecha Inicio: </label>
+                  </div>
+                  <div class="form-group col-xs-3">
+                    <input type="date" class="form-control" id="exampleInputEmail1" placeholder="Fecha"> </p>
+                  </div>
+                  <div class="form-group col-xs-3">
+                    <p>
+                      <label for="exampleInputEmail1">Fecha Finalización </label>
+                  </div>
+                  <div class="form-group col-xs-3">
+                    <input type="date" class="form-control" id="exampleInputEmail1" placeholder="Fecha"> </p>
+                  </div>
+                  <div class="form-group col-xs-3 text-center">
+                    <div class="row">
+                      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--***************2DA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    PRUEBA DE BER
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+
+                  <div class="form-group col-xs-12 text-center">
+                    <p>PRUEBA DE BER </p>
+                  </div>
+                  <div class="form-group col-xs-3">
+                    <p>
+                      <label for="exampleInputEmail1">Velocidad de Prueba </label>
+                  </div>
+                  <div class="form-group col-xs-8">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="velocidad"> </p>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="checkbox col-xs-4">
+                      <label>
+                        <input type="checkbox"> Kbps
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-4">
+                      <label>
+                        <input type="checkbox"> Mbps
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-4">
+                      <label>
+                        <input type="checkbox"> Gbps
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-12 text-center">
+                      <p> DISPONIBILIDAD </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-12 text-center">
+                      <p> Valor Esperado: 98% </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Tiempo de Prueba </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="tiempo"> </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Numero Maximo de Bits Errados</label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="A"> </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Valor Medio (Tiempo de Prueba) </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="a"> </p>
+                    </div>
+                  </div>
+                  <!--aquiii-->
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">¿Cumple? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--aquii lalinea de separacion-->
+
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">Termino la prueba? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Detalle la causa: </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1,obs2,obs3..."> </p>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-xs-8">
+                    <button type="button" class="btn btn-default btn-lg">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+                    </button>
+                  </div>
+                  <!--separador-->
+                  <div class="col-xs-12 separador"></div>
+                  <div class="form-group col-xs-3 text-center">
+                    <div class="row">
+                      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--***************3RA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    PRUEBA DE TRHOUGHPUT
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Tipo deServicio </label>
+                    </div>
+                    <div class="form-group col-xs-4">
+		              <select class="form-control">
+		              	<option>Servicio 1</option>
+		                <option>Servicio 2</option>
+		                <option>Servicio 3</option>
+		                <option>Servicio 4</option>
+		                <option>Servicio 5</option>
+		                <option>Servicio 6</option>
+		              </select>
+		            </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Longitud Trama </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Bytes"> </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Maximo Valor de tunel del Servicio </label>
+                    </div>
+                    <div class="form-group col-xs-6">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Gbpsss"> </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Cir. Throughput teorico considerando cabecera mpls y vlan's </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="gbps a"> </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Valor Medio </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="gbs"> </p>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">¿Cumple? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Detalle la causa: </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1,obs2,obs3..."> </p>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-xs-8">
+                    <button type="button" class="btn btn-default btn-lg">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+                    </button>
+                  </div>
+                  <!--separador-->
+                  <div class="col-xs-12 separador"></div>
+                  <div class="form-group col-xs-3 text-center">
+                    <div class="row">
+                      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+                    </div>
+                  </div>
+                  <!--fin seccion-->
+                </div>
+              </div>
+            </div>
+            <!--***************4TA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#col4" aria-expanded="false" aria-controls="col4">
+                    LATENCIA
+                  </a>
+                </h4>
+              </div>
+              <div id="col4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Tipo Servicio </label>
+                    </div>
+                    <div class="form-group col-xs-4">
+		              <select class="form-control">
+		              	<option>Servicio 1</option>
+		                <option>Servicio 2</option>
+		                <option>Servicio 3</option>
+		                <option>Servicio 4</option>
+		                <option>Servicio 5</option>
+		                <option>Servicio 6</option>
+		              </select>
+		            </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-12 ">
+                      <p> Valor Esperado en un sentido
+                        < 150 ms </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Valor Medido </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="GBPS A"> </p>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">¿Cumple? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">Termino la prueba? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Detalle la causa: </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1,obs2,obs3..."> </p>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-xs-8">
+                    <button type="button" class="btn btn-default btn-lg">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+                    </button>
+                  </div>
+                  <!--separador-->
+                  <div class="col-xs-12 separador"></div>
+                  <div class="form-group col-xs-3 text-center">
+                    <div class="row">
+                      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+                    </div>
+                  </div>
+                  <!--fin seccion-->
+                </div>
+              </div>
+            </div>
+            <!--***************5TA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#col5" aria-expanded="false" aria-controls="col5">
+                    JITTER PROMEDIO
+                  </a>
+                </h4>
+              </div>
+              <div id="col5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Tipo Servicio </label>
+                    </div>
+                    <div class="form-group col-xs-4">
+		              <select class="form-control">
+		              	<option>Servicio 1</option>
+		                <option>Servicio 2</option>
+		                <option>Servicio 3</option>
+		                <option>Servicio 4</option>
+		                <option>Servicio 5</option>
+		                <option>Servicio 6</option>
+		              </select>
+		            </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-12 ">
+                      <p> Valor Esperado en un sentido
+                        < 10 ms </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Valor Medido A ->B </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="X1"> </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Valor Medido B -> A </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="X2"> </p>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">¿Cumple? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">Termino la prueba? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Detalle la causa: </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1,obs2,obs3..."> </p>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-xs-8">
+                    <button type="button" class="btn btn-default btn-lg">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+                    </button>
+                  </div>
+                  <!--separador-->
+                  <div class="col-xs-12 separador"></div>
+                  <div class="form-group col-xs-3 text-center">
+                    <div class="row">
+                      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+                    </div>
+                  </div>
+                  <!--fin de seccion-->
+                </div>
+              </div>
+            </div>
+            <!--***************6TA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#col6" aria-expanded="false" aria-controls="col6">
+                    JITTER MAXIMO
+                  </a>
+                </h4>
+              </div>
+              <div id="col6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Tipo Servicio </label>
+                    </div>
+                    <div class="form-group col-xs-4">
+		              <select class="form-control">
+		              	<option>Servicio 1</option>
+		                <option>Servicio 2</option>
+		                <option>Servicio 3</option>
+		                <option>Servicio 4</option>
+		                <option>Servicio 5</option>
+		                <option>Servicio 6</option>
+		              </select>
+		            </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-12 ">
+                      <p> Valor Esperado en un sentido
+                        < 20 ms </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Valor Medido A ->B </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="X1"> </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Valor Medido B -> A </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="X2"> </p>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">¿Cumple? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">Termino la prueba? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Detalle la causa: </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1,obs2,obs3..."> </p>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-xs-8">
+                    <button type="button" class="btn btn-default btn-lg">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+                    </button>
+                  </div>
+                  <!--separador-->
+                  <div class="col-xs-12 separador"></div>
+                  <div class="form-group col-xs-3 text-center">
+                    <div class="row">
+                      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+                    </div>
+                  </div>
+                  <!-- find seccion-->
+                </div>
+              </div>
+            </div>
+            <!--***************7mA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#col7" aria-expanded="false" aria-controls="col7">
+                    PERDIDA DE PAQUETES
+                  </a>
+                </h4>
+              </div>
+              <div id="col7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Tipo Servicio </label>
+                    </div>
+                    <div class="form-group col-xs-4">
+		              <select class="form-control">
+		              	<option>Servicio 1</option>
+		                <option>Servicio 2</option>
+		                <option>Servicio 3</option>
+		                <option>Servicio 4</option>
+		                <option>Servicio 5</option>
+		                <option>Servicio 6</option>
+		              </select>
+		            </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-12 ">
+                      <p> Valor Esperado en un sentido
+                        < 2% </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">N° de PaquetesTransmitidos durante el Tiempo de Medida </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="num paq"> </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Valor Medido A ->B </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="X1"> </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Valor Medido B -> A </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="X2"> </p>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">¿Cumple? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">Termino la prueba? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Detalle la causa: </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1,obs2,obs3..."> </p>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-xs-8">
+                    <button type="button" class="btn btn-default btn-lg">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+                    </button>
+                  </div>
+                  <!--separador-->
+                  <div class="col-xs-12 separador"></div>
+                  <div class="form-group col-xs-3 text-center">
+                    <div class="row">
+                      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+                    </div>
+                  </div>
+                  <!-- fin seccion-->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--**************************************2DO POPUP-->
+  <div id="myModal2" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">REGION CAJAMARCA</h4>
+          <h4 class="modal-title text-center">Formato De Pruebas De Calidad De La Red De TRANSPORTE</h4>
+        </div>
+
+        <div class="modal-body clearfix">
+
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <!--***************1RA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#RTseccion1" aria-expanded="true" aria-controls="RTseccion1">
+                    RED DE TRANSPORTE
+                  </a>
+                </h4>
+              </div>
+              <div id="RTseccion1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <div class="form-group col-xs-12 text-center">
+                    <p>RED DE TRANSPORTE </p>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <p>Prueba de calidad del enlace: </p>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label for="exampleInputEmail1">Nodo A: </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
+                  </div>
+                  <div class="form-group col-xs-6">
+                    <label for="exampleInputEmail1">Localidad: </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Localidad">
+                  </div>
+                  <div class="form-group col-xs-6">
+                    <label for="exampleInputEmail1">Distrito: </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Distrito">
+                  </div>
+                  <div class="form-group col-xs-6">
+                    <label for="exampleInputEmail1">Provincia: </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Provincia">
+                  </div>
+                  <div class="form-group col-xs-12 text-center">
+                    <h4>Tipo de Nodo</h4>
+                  </div>
+
+                  <div class="form-group col-xs-12">
+                    <div class="checkbox col-xs-3">
+                      <label>
+                        <input type="checkbox"> Core
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-3">
+                      <label>
+                        <input type="checkbox"> Agregación
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-3">
+                      <label>
+                        <input type="checkbox"> Distribución
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-3">
+                      <label>
+                        <input type="checkbox"> Conexión
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 separador"></div>
+                  <div class="form-group col-xs-12">
+                    <label for="exampleInputEmail1">Nodo B: </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
+                  </div>
+                  <div class="form-group col-xs-6">
+                    <label for="exampleInputEmail1">Localidad: </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Localidad">
+                  </div>
+                  <div class="form-group col-xs-6">
+                    <label for="exampleInputEmail1">Distrito: </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Distrito">
+                  </div>
+                  <div class="form-group col-xs-6">
+                    <label for="exampleInputEmail1">Provincia: </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Provincia">
+                  </div>
+                  <div class="form-group col-xs-12 text-center">
+                    <h4>Tipo de Nodo</h4>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="checkbox col-xs-3">
+                      <label>
+                        <input type="checkbox"> Core
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-3">
+                      <label>
+                        <input type="checkbox"> Agregación
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-3">
+                      <label>
+                        <input type="checkbox"> Distribución
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-3">
+                      <label>
+                        <input type="checkbox"> Conexión
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 separador"></div>
+                  <div class="form-group col-xs-3">
+                    <p>
+                      <label for="exampleInputEmail1">Equipo lado A: </label>
+                  </div>
+                  <div class="form-group col-xs-8">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Equipo A"> </p>
+                  </div>
+                  <div class="form-group col-xs-3">
+                    <label for="exampleInputEmail1">Equipo lado B: </label>
+                  </div>
+                  <div class="form-group col-xs-8">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Equipo B"> </p>
+                  </div>
+
+                  <div class="form-group col-xs-3">
+                    <p>
+                      <label for="exampleInputEmail1">Fecha Inicio: </label>
+                  </div>
+                  <div class="form-group col-xs-3">
+                    <input type="date" class="form-control" id="exampleInputEmail1" placeholder="Fecha Inicio"> </p>
+                  </div>
+                  <div class="form-group col-xs-3">
+                    <p>
+                      <label for="exampleInputEmail1">Fecha Finalización </label>
+                  </div>
+                  <div class="form-group col-xs-3">
+                    <input type="date" class="form-control" id="exampleInputEmail1" placeholder="Fecha Fin"> </p>
+                  </div>
+                  <div class="col-xs-12 separador"></div>
+                  <div class="form-group col-xs-3 text-center">
+                    <div class="row">
+                      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--***************2DA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#RTseccion2" aria-expanded="false"
+                    aria-controls="RTseccion2">
+                    PRUEBA DE BER
+                  </a>
+                </h4>
+              </div>
+              <div id="RTseccion2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+
+                  <div class="form-group col-xs-12 text-center">
+                    <p>PRUEBA DE BER </p>
+                  </div>
+                  <div class="row ">
+                  <div class="form-group col-xs-12 ">
+                    <p> VALOR ESPERADO </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                  <div class="form-group col-xs-12 ">
+                    <p> Nodo A -> Nodo B </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                  <div class="form-group col-xs-3">
+                    <p>
+                      <label for="exampleInputEmail1"> Tipo de Enlace </label>
+                  </div>
+                  <div class="form-group col-xs-8">
+                  	<select class="form-control">
+                  		<option>DISTRIBUCION – AGREGACION CON REDUNDANCIA</option>
+                  		<option>DISTRIBUCION – AGREGACION SIN REDUNDANCIA</option>
+                  		<option>CONEXIÓN - DISTRIBUCION</option>
+                  	</select>
+                  </div>
+                  </div>
+                  <div class="row ">
+                  	<div class="form-group col-xs-3">
+                  		<p>
+                  			<label for="exampleInputEmail1">Longitud de Trama</label>
+                  		</div>
+                  		<div class="form-group col-xs-8">
+                  			<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Bytes"> </p>
+                  		</div>
+                  	</div>
+                  <div class="row ">
+                    <div class="form-group col-xs-12 text-center">
+                      <p> Valor Esperado: varia porcentaje %: 98% </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Tiempo de Prueba </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="tiempo"> </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Numero Maximo de Bits Errados</label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder= "N° A"> </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Valor Medido (N° de Bits Errados en el Tiempo de Prueba) </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="N°a"> </p>
+                    </div>
+                  </div>
+                  <!--aquiii-->
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">¿Cumple? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--aquii lalinea de separacion-->
+
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">Termino la prueba? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Detalle la causa: </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1,obs2,obs3..."> </p>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-3">
+                        <label for="exampleInputEmail1">Grado de Observación </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Leve 
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Medio
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Grave
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="form-group col-xs-8">
+                    <button type="button" class="btn btn-default btn-lg">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+                    </button>
+                  </div>
+                  <!--separador-->
+                  <div class="col-xs-12 separador"></div>
+                  <div class="form-group col-xs-3 text-center">
+                    <div class="row">
+                      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--***************3RA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#RTseccion3" aria-expanded="false"
+                    aria-controls="RTseccion3">
+                    PRUEBA DE TRHOUGHPUT
+                  </a>
+                </h4>
+              </div>
+              <div id="RTseccion3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Tipo Servicio </label>
+                    </div>
+                    <div class="form-group col-xs-4">
+		              <select class="form-control">
+		              	<option>Servicio 1</option>
+		                <option>Servicio 2</option>
+		                <option>Servicio 3</option>
+		                <option>Servicio 4</option>
+		                <option>Servicio 5</option>
+		                <option>Servicio 6</option>
+		              </select>
+		            </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Longitud Trama </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Bytes"> </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Maximo Valor de tunel del Servicio </label>
+                    </div>
+                    <div class="form-group col-xs-6">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="GBPS"> </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Cir. Throughput teorico considerando cabecera mpls y vlan's </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="GBPS A"> </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Valor Medido </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="GBPS a"> </p>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">¿Cumple? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12">
+                  <div class="row ">
+                    <div class="form-group col-xs-4">
+                    <label for="exampleInputEmail1">Termino la prueba? </label>
+                    </div>
+                    <div class="checkbox col-xs-4">
+                    <label>
+                      <input type="checkbox"> Si
+                    </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                      <label>
+                      <input type="checkbox"> No
+                      </label>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Detalle la causa: </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1,obs2,obs3..."> </p>
+                    </div>
+                  </div>
+
+
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-3">
+                        <label for="exampleInputEmail1">Grado de Observación </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Leve 
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Medio
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Grave
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-xs-8">
+                    <button type="button" class="btn btn-default btn-lg">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+                    </button>
+                  </div>
+                  <!--separador-->
+                  <div class="col-xs-12 separador"></div>
+                  <div class="form-group col-xs-3 text-center">
+                    <div class="row">
+                      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+                    </div>
+                  </div>
+                  <!--fin seccion-->
+                </div>
+              </div>
+            </div>
+            <!--***************4TA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#RTseccion4" aria-expanded="false" aria-controls="RTseccion4">
+                    LATENCIA
+                  </a>
+                </h4>
+              </div>
+              <div id="RTseccion4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Tipo Servicio </label>
+                    </div>
+                    <div class="form-group col-xs-4">
+		              <select class="form-control">
+		              	<option>Servicio 1</option>
+		                <option>Servicio 2</option>
+		                <option>Servicio 3</option>
+		                <option>Servicio 4</option>
+		                <option>Servicio 5</option>
+		                <option>Servicio 6</option>
+		              </select>
+		            </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-12 ">
+                      <p> Valor Esperado en un sentido
+                        < 30 ms </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Valor Medido IDA y VUELTA </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="GBPS a"> </p>
+                    </div>
+                  </div>
+                 
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">¿Cumple? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">Termino la prueba? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Detalle la causa: </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1,obs2,obs3..."> </p>
+                    </div>
+                  </div>
+
+
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-3">
+                        <label for="exampleInputEmail1">Grado de Observación </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Leve 
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Medio
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Grave
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-xs-8">
+                    <button type="button" class="btn btn-default btn-lg">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+                    </button>
+                  </div>
+                  <!--separador-->
+                  <div class="col-xs-12 separador"></div>
+                  <div class="form-group col-xs-3 text-center">
+                    <div class="row">
+                      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+                    </div>
+                  </div>
+                  <!--fin seccion-->
+                </div>
+              </div>
+            </div>
+            <!--***************5TA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#RTseccion5" aria-expanded="false" aria-controls="RTseccion5">
+                    JITTER PROMEDIO
+                  </a>
+                </h4>
+              </div>
+              <div id="RTseccion5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Tipo Servicio </label>
+                    </div>
+                    <div class="form-group col-xs-4">
+		              <select class="form-control">
+		              	<option>Servicio 1</option>
+		                <option>Servicio 2</option>
+		                <option>Servicio 3</option>
+		                <option>Servicio 4</option>
+		                <option>Servicio 5</option>
+		                <option>Servicio 6</option>
+		              </select>
+		            </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-12 ">
+                      <p> Valor Esperado en un sentido
+                        < 10 ms </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Valor Medido A ->B </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="X1"> </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Valor Medido B -> A </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="X2"> </p>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">¿Cumple? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">Termino la prueba? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Detalle la causa: </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1,obs2,obs3..."> </p>
+                    </div>
+                  </div>
+
+
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-3">
+                        <label for="exampleInputEmail1">Grado de Observación </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Leve 
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Medio
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Grave
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-xs-8">
+                    <button type="button" class="btn btn-default btn-lg">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+                    </button>
+                  </div>
+                  <!--separador-->
+                  <div class="col-xs-12 separador"></div>
+                  <div class="form-group col-xs-3 text-center">
+                    <div class="row">
+                      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+                    </div>
+                  </div>
+                  <!--fin de seccion-->
+                </div>
+              </div>
+            </div>
+            <!--***************6TA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#RTseccion6" aria-expanded="false" aria-controls="RTseccion6">
+                    JITTER MAXIMO
+                  </a>
+                </h4>
+              </div>
+              <div id="RTseccion6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Tipo Servicio </label>
+                    </div>
+                    <div class="form-group col-xs-4">
+		              <select class="form-control">
+		              	<option>Servicio 1</option>
+		                <option>Servicio 2</option>
+		                <option>Servicio 3</option>
+		                <option>Servicio 4</option>
+		                <option>Servicio 5</option>
+		                <option>Servicio 6</option>
+		              </select>
+		            </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-12 ">
+                      <p> Valor Esperado en un sentido
+                        < 20 ms </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Valor Medido A ->B </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="X1"> </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Valor Medido B -> A </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="X2"> </p>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">¿Cumple? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">Termino la prueba? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Detalle la causa: </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1,obs2,obs3..."> </p>
+                    </div>
+                  </div>
+
+
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-3">
+                        <label for="exampleInputEmail1">Grado de Observación </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Leve 
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Medio
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Grave
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-xs-8">
+                    <button type="button" class="btn btn-default btn-lg">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+                    </button>
+                  </div>
+                  <!--separador-->
+                  <div class="col-xs-12 separador"></div>
+                  <div class="form-group col-xs-3 text-center">
+                    <div class="row">
+                      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+                    </div>
+                  </div>
+                  <!-- find seccion-->
+                </div>
+              </div>
+            </div>
+            <!--***************7mA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#RTseccion7" aria-expanded="false" aria-controls="RTseccion7">
+                    PERDIDA DE PAQUETES
+                  </a>
+                </h4>
+              </div>
+              <div id="RTseccion7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Tipo Servicio </label>
+                    </div>
+                    <div class="form-group col-xs-4">
+		              <select class="form-control">
+		              	<option>Servicio 1</option>
+		                <option>Servicio 2</option>
+		                <option>Servicio 3</option>
+		                <option>Servicio 4</option>
+		                <option>Servicio 5</option>
+		                <option>Servicio 6</option>
+		              </select>
+		            </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-12 ">
+                      <p> Valor Esperado en un sentido
+                        < 0.3 % </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">N° de Paquetes Transmitidos durante el Tiempo de Medida </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="N° Paquetes"> </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Valor Medido A ->B </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="X1"> </p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Valor Medido B -> A </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="X2"> </p>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">¿Cumple? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-4">
+                        <label for="exampleInputEmail1">Termino la prueba? </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> Si
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-4">
+                        <label>
+                          <input type="checkbox"> No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="form-group col-xs-3">
+                      <p>
+                        <label for="exampleInputEmail1">Detalle la causa: </label>
+                    </div>
+                    <div class="form-group col-xs-8">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1,obs2,obs3..."> </p>
+                    </div>
+                  </div>
+
+
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-3">
+                        <label for="exampleInputEmail1">Grado de Observación </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Leve 
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Medio
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Grave
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-xs-8">
+                    <button type="button" class="btn btn-default btn-lg">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+                    </button>
+                  </div>
+                  <!--separador-->
+                  <div class="col-xs-12 separador"></div>
+                  <div class="form-group col-xs-3 text-center">
+                    <div class="row">
+                      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+                    </div>
+                  </div>
+                  <!-- fin seccion-->
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+      <!--************************************3ER POPUP-->
+      <div id="myModal3" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">REGION CAJAMARCA</h4>
+          <h4 class="modal-title text-center">01 FORMULARIO DE ENTRADA DE SISTEMA DE ENERGIA red transporte</h4>
+        </div>
+
+        <div class="modal-body clearfix">
+
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+            <div class="row ">
+             <div class="form-group col-xs-2">
+               <p>
+                <label for="exampleInputEmail1">Nodo </label>
+            </div>
+            <div class="form-group col-xs-3">
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="nodo"> </p>
+          </div>
+          <div class="form-group col-xs-2">
+               <p>
+                <label for="exampleInputEmail1">Localidad </label>
+            </div>
+            <div class="form-group col-xs-3">
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="lugar"> </p>
+          </div>
+          </div>
+            <!--***************1RA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#FESERTseccion1" aria-expanded="true" aria-controls="FESERTseccion1">
+                    SISTEMA DE ENERGIA RED DE TRANSPORTE
+                  </a>
+                </h4>
+              </div>
+              <div id="FESERTseccion1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-4">
+        <label for="exampleInputEmail1">Cuenta con Sistema de Energía Comercial </label>
+    </div>
+    <div class="checkbox col-xs-4">
+        <label>
+          <input type="checkbox"> Si
+      </label>
+  </div>
+  <div class="checkbox col-xs-4">
+    <label>
+      <input type="checkbox"> No
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-4">
+        <label for="exampleInputEmail1">Nivel de Tensión de Entrada ( solo "SI" hay sistema de energia comercial)</label>
+    </div>
+    <div class="checkbox col-xs-4">
+        <label>
+          <input type="checkbox">Baja Tension
+      </label>
+  </div>
+  <div class="checkbox col-xs-4">
+    <label>
+      <input type="checkbox"> Media Tensión
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-2">
+        <label for="exampleInputEmail1">Baja Tensión: </label>
+    </div>
+    <div class="checkbox col-xs-2">
+        <label>
+          <input type="checkbox"> 220 Vac MONOFÁSICO
+      </label>
+  </div>
+  <div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> 220 Vac TRIFÁSICO
+  </label>
+</div>
+<div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> 380 Vac TRIFÁSICO
+  </label>
+</div>
+<div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> 220 Vac LINEA TIERRA
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-2">
+        <label for="exampleInputEmail1">Media Tensión: </label>
+    </div>
+    <div class="checkbox col-xs-2">
+        <label>
+          <input type="checkbox"> 10 Kv TRIFÁSICO
+      </label>
+  </div>
+  <div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> 13.2 Kv TRIFÁSICO
+  </label>
+</div>
+<div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> 20 Kv TRIFÁSICO
+  </label>
+</div>
+<div class="checkbox col-xs-1">
+    <label>
+      <input type="checkbox"> OTROS
+  </label>
+</div>
+<div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="especificar"> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-4">
+        <label for="exampleInputEmail1">MEDIDOR </label>
+    </div>
+    <div class="checkbox col-xs-4">
+        <label>
+          <input type="checkbox"> Si
+      </label>
+  </div>
+  <div class="checkbox col-xs-4">
+    <label>
+      <input type="checkbox"> No
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-3">
+    <p>
+      <label for="exampleInputEmail1">Empresa Suministradora</label>
+  </div>
+  <div class="form-group col-xs-8">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre Empresa Suministradora"> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-4">
+        <label for="exampleInputEmail1">Tipo de Medición </label>
+    </div>
+    <div class="checkbox col-xs-4">
+        <label>
+          <input type="checkbox"> Baja Tensión
+      </label>
+  </div>
+  <div class="checkbox col-xs-4">
+    <label>
+      <input type="checkbox"> Media Tensión
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-1">
+    <p>
+      <label for="exampleInputEmail1">Marca </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Marca"> </p>
+</div>
+  <div class="form-group col-xs-1">
+    <p>
+      <label for="exampleInputEmail1">Modelo </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Modelo"> </p>
+   </div>
+  <div class="form-group col-xs-1">
+    <p>
+      <label for="exampleInputEmail1">Serie </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Serie"> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-4">
+        <label for="exampleInputEmail1">ESTADO DE INSTALACIÓN (Fijacióny cableado con terminales) </label>
+    </div>
+    <div class="checkbox col-xs-4">
+        <label>
+          <input type="checkbox"> Instalación Correcta
+      </label>
+  </div>
+  <div class="checkbox col-xs-4">
+    <label>
+      <input type="checkbox"> Instalación Incorrecta
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+	<div class="row ">
+			<div class="form-group col-xs-3">
+			<p>
+				<label for="exampleInputEmail1">OBSERVACIONES </label>
+			</div>
+			<div class="form-group col-xs-8">
+				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1, obs2,..."> </p>
+			</div>
+	</div>
+</div>
+
+                  <div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-3">
+                        <label for="exampleInputEmail1">Grado de Observación </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Leve 
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Medio
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Grave
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+<div class="col-xs-12 separador"></div>
+<div class="form-group col-xs-3 text-center">
+    <div class="form-group col-xs-12">
+    <div class="row">
+      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+  </div>
+</div>                 
+</div>
+
+
+
+                </div>
+              </div>
+            </div>
+            <!--***************2DA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#FESERTseccion2" aria-expanded="false" aria-controls="FESERTseccion2">
+                    TABLERO GENERAL
+                  </a>
+                </h4>
+              </div>
+              <div id="FESERTseccion2" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  <div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-3">
+    <p>
+      <label for="exampleInputEmail1">Tablero General </label>
+  </div>
+  <div class="form-group col-xs-8">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre"> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-4">
+        <label for="exampleInputEmail1">ESTADO DE INSTALACIÓN (Fijación y cableado con terminales) </label>
+    </div>
+    <div class="checkbox col-xs-4">
+        <label>
+          <input type="checkbox"> Si
+      </label>
+  </div>
+  <div class="checkbox col-xs-4">
+    <label>
+      <input type="checkbox"> No
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-3">
+    <p>
+      <label for="exampleInputEmail1">OBSERVACIÓN </label>
+  </div>
+  <div class="form-group col-xs-8">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1, obs2, ..."> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-3">
+                        <label for="exampleInputEmail1">Grado de Observación </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Leve 
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Medio
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Grave
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+<div class="form-group col-xs-12">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-1">
+    <p>
+      <label for="exampleInputEmail1">Marca </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Marca"> </p>
+</div>
+  <div class="form-group col-xs-1">
+    <p>
+      <label for="exampleInputEmail1">Modelo </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Modelo"> </p>
+   </div>
+  <div class="form-group col-xs-1">
+    <p>
+      <label for="exampleInputEmail1">Serie </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Serie"> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+
+<div class="col-xs-12 separador"></div>
+<div class="form-group col-xs-3 text-center">
+    <div class="form-group col-xs-12">
+    <div class="row">
+      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+  </div>
+</div>                 
+</div>
+
+
+                </div>
+              </div>
+            </div>
+            <!--***************3RA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#FESERTseccion3" aria-expanded="false"
+                    aria-controls="FESERTseccion3">
+                    TABLERO DE DISTRIBUCIÓN
+                  </a>
+                </h4>
+              </div>
+              <div id="FESERTseccion3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-3">
+    <p>
+      <label for="exampleInputEmail1">Tablero Distribución </label>
+  </div>
+  <div class="form-group col-xs-8">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre"> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-4">
+        <label for="exampleInputEmail1">ESTADO DE INSTALACIÓN (Fijación y cableado con terminales) </label>
+    </div>
+    <div class="checkbox col-xs-4">
+        <label>
+          <input type="checkbox"> Si
+      </label>
+  </div>
+  <div class="checkbox col-xs-4">
+    <label>
+      <input type="checkbox"> No
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-3">
+    <p>
+      <label for="exampleInputEmail1">OBSERVACIÓN </label>
+  </div>
+  <div class="form-group col-xs-8">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1, obs2, ..."> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-3">
+                        <label for="exampleInputEmail1">Grado de Observación </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Leve 
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Medio
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Grave
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+<div class="form-group col-xs-12">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-1">
+    <p>
+      <label for="exampleInputEmail1">Marca </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Marca"> </p>
+</div>
+  <div class="form-group col-xs-1">
+    <p>
+      <label for="exampleInputEmail1">Modelo </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Modelo"> </p>
+   </div>
+  <div class="form-group col-xs-1">
+    <p>
+      <label for="exampleInputEmail1">Serie </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Serie"> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+
+<div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-4">
+        <label for="exampleInputEmail1">Las Llaves Están Etiquetadas? </label>
+    </div>
+    <div class="checkbox col-xs-4">
+        <label>
+          <input type="checkbox"> Si
+      </label>
+  </div>
+  <div class="checkbox col-xs-4">
+    <label>
+      <input type="checkbox"> No
+  </label>
+</div>
+</div>
+</div>
+
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-3">
+    <p>
+      <label for="exampleInputEmail1">OBSERVACIÓN </label>
+  </div>
+  <div class="form-group col-xs-8">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1, obs2, ..."> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-3">
+                        <label for="exampleInputEmail1">Grado de Observación </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Leve 
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Medio
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Grave
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+<div class="form-group col-xs-12">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+<div class="col-xs-12 separador"></div>
+<div class="form-group col-xs-3 text-center">
+    <div class="form-group col-xs-12">
+    <div class="row">
+      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+  </div>
+</div>                 
+</div>
+
+                </div>
+              </div>
+            </div>
+            <!--***************4TA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#FESERTseccion4" aria-expanded="false" aria-controls="FESERTseccion4">
+                    GRUPOS ELECTROGENOS
+                  </a>
+                </h4>
+              </div>
+              <div id="FESERTseccion4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-4">
+        <label for="exampleInputEmail1">Cuenta con Grupos Electrógenos</label>
+    </div>
+    <div class="checkbox col-xs-4">
+        <label>
+          <input type="checkbox"> Si
+      </label>
+  </div>
+  <div class="checkbox col-xs-4">
+    <label>
+      <input type="checkbox"> No
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-3">
+    <p>
+      <label for="exampleInputEmail1">OBSERVACIÓN </label>
+  </div>
+  <div class="form-group col-xs-8">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1, obs2, ..."> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-3">
+                        <label for="exampleInputEmail1">Grado de Observación </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Leve 
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Medio
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Grave
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+<div class="form-group col-xs-12">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-1">
+    <p>
+      <label for="exampleInputEmail1">Marca </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Marca"> </p>
+</div>
+  <div class="form-group col-xs-1">
+    <p>
+      <label for="exampleInputEmail1">Modelo </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Modelo"> </p>
+   </div>
+  <div class="form-group col-xs-1">
+    <p>
+      <label for="exampleInputEmail1">Serie </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Serie"> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-2">
+    <p>
+      <label for="exampleInputEmail1">Potencia Del grupo Electrógeno en Kva </label>
+  </div>
+  <div class="form-group col-xs-1">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="kva"> </p>
+</div>
+<div class="form-group col-xs-2">
+    <p>
+      <label for="exampleInputEmail1">Tensión Nominal </label>
+  </div>
+  <div class="form-group col-xs-1">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Vac"> </p>
+</div><div class="form-group col-xs-2">
+    <p>
+      <label for="exampleInputEmail1"> Frecuencia Nominal</label>
+  </div>
+  <div class="form-group col-xs-1">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Hz"> </p>
+</div><div class="form-group col-xs-2">
+    <p>
+      <label for="exampleInputEmail1">Corriente de Linea Nominal </label>
+  </div>
+  <div class="form-group col-xs-1">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Amp"> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-4">
+        <label for="exampleInputEmail1">Fase </label>
+    </div>
+    <div class="checkbox col-xs-4">
+        <label>
+          <input type="checkbox"> MONOFÁSICO
+      </label>
+  </div>
+  <div class="checkbox col-xs-4">
+    <label>
+      <input type="checkbox"> TRIFÁSICO
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-8">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+****
+<div class="form-group col-xs-12">
+    <div class="row ">
+    <div class="checkbox col-xs-2">
+        <label>
+          <input type="checkbox"> Medidor de Voltaje
+      </label>
+  </div>
+  <div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> Medidor de Corriente
+  </label>
+</div>
+<div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> Medidor de Potencia
+  </label>
+</div>
+<div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> Medidor de Frecuencia
+  </label>
+</div>
+<div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> Tacómetro
+  </label>
+</div>
+<div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> Batería de Arranque
+  </label>
+</div>
+<div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> Boton parada Emergencia
+  </label>
+</div>
+<div class="checkbox col-xs-2"> 
+    <label>
+      <input type="checkbox"> Indicador Presión Aceite
+  </label>
+</div>
+<div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> Indicador Falla Ge..
+  </label>
+</div>
+<div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> Indicador Falla Arranque
+  </label>
+</div>
+</div>
+</div>
+
+
+<div class="form-group col-xs-8">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-4">
+        <label for="exampleInputEmail1">La isntalación cumple con las Especificaciones Técnicas (Apéndice 3 de las especificaciones Técnicas Anexo8-A) </label>
+    </div>
+    <div class="checkbox col-xs-4">
+        <label>
+          <input type="checkbox"> Si
+      </label>
+  </div>
+  <div class="checkbox col-xs-4">
+    <label>
+      <input type="checkbox"> No
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-3">
+    <p>
+      <label for="exampleInputEmail1">OBSERVACIÓN </label>
+  </div>
+  <div class="form-group col-xs-8">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1, obs2, ..."> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-3">
+                        <label for="exampleInputEmail1">Grado de Observación </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Leve 
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Medio
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Grave
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+<div class="form-group col-xs-12">
+<div class="col-xs-12 separador"></div>
+<div class="form-group col-xs-3 text-center">
+<div class="form-group col-xs-12">
+    <div class="row">
+      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+  </div>
+</div>                 
+</div>
+</div>
+
+                </div>
+              </div>
+            </div>
+            <!--***************5TA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#FESERTseccion5" aria-expanded="false" aria-controls="FESERTseccion5">
+                    TABLERO DE TRANSFERENCIA
+                  </a>
+                </h4>
+              </div>
+              <div id="FESERTseccion5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+               <div class="panel-body">
+                  <div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-1">
+    <p>
+      <label for="exampleInputEmail1">Marca </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Marcar"> </p>
+</div>
+  <div class="form-group col-xs-1">
+    <p>
+      <label for="exampleInputEmail1">Modelo </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Modelo"> </p>
+   </div>
+  <div class="form-group col-xs-1">
+    <p>
+      <label for="exampleInputEmail1">Serie </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Serie"> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-4">
+        <label for="exampleInputEmail1">La isntalación cumple con las Especificaciones Técnicas (Apéndice 3 de las especificaciones Técnicas Anexo 8-A) </label>
+    </div>
+    <div class="checkbox col-xs-4">
+        <label>
+          <input type="checkbox"> Si
+      </label>
+  </div>
+  <div class="checkbox col-xs-4">
+    <label>
+      <input type="checkbox"> No
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-3">
+    <p>
+      <label for="exampleInputEmail1">OBSERVACIÓN </label>
+  </div>
+  <div class="form-group col-xs-8">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1, obs2, ..."> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-3">
+                        <label for="exampleInputEmail1">Grado de Observación </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Leve 
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Medio
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Grave
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+<div class="form-group col-xs-8">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+<div class="row ">
+    <div class="form-group col-xs-12 text-center">
+        <p> Cuenta con: </p>
+    </div>
+</div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+    <div class="checkbox col-xs-2">
+        <label>
+          <input type="checkbox"> Interruptor ON/OFF
+      </label>
+  </div>
+  <div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> Contactos para Alarma
+  </label>
+</div>
+<div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> Medidor de Corriente
+  </label>
+</div>
+<div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> I. O. Grupo Electrógeno
+  </label>
+</div>
+<div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> I. Falla Grupo Electrógeno
+  </label>
+</div>
+<div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> I. Falla de Arranque
+  </label>
+</div>
+<div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> Llaves Selec. Modo Arranque
+  </label>
+</div>
+<div class="checkbox col-xs-2"> 
+    <label>
+      <input type="checkbox"> Medidor de voltaje
+  </label>
+</div>
+<div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> I. P. Energia Comercial
+  </label>
+</div>
+<div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> I. Corte Energia Comercial
+  </label>
+</div>
+<div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> I. Presión de Aceite
+  </label>
+</div>
+<div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> I. boton Parada Emergencia G.E.
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-4">
+        <label for="exampleInputEmail1">Existe Panel Mural </label>
+    </div>
+    <div class="checkbox col-xs-4">
+        <label>
+          <input type="checkbox"> Si
+      </label>
+  </div>
+  <div class="checkbox col-xs-4">
+    <label>
+      <input type="checkbox"> No
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-3">
+    <p>
+      <label for="exampleInputEmail1">OBSERVACIÓN </label>
+  </div>
+  <div class="form-group col-xs-8">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1, obs2, ..."> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-3">
+                        <label for="exampleInputEmail1">Grado de Observación </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Leve 
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Medio
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Grave
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+<div class="col-xs-12 separador"></div>
+<div class="row ">
+    <div class="form-group col-xs-12 ">
+        <p> TANQUE DE ALMACENAMIENTO DE COMBUSTIBLE </p>
+    </div>
+</div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+    <div class="checkbox col-xs-4">
+        <label>
+          <input type="checkbox"> Interno
+      </label>
+  </div>
+  <div class="form-group col-xs-3">
+    <p>
+      <label for="exampleInputEmail1"> Capacidad </label>
+  </div>
+  <div class="form-group col-xs-3">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="c"> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-4">
+        <label for="exampleInputEmail1">Instalación de Tuberías, cañerías adecuados </label>
+    </div>
+    <div class="checkbox col-xs-4">
+        <label>
+          <input type="checkbox"> Si
+      </label>
+  </div>
+  <div class="checkbox col-xs-4">
+    <label>
+      <input type="checkbox"> No
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-3">
+    <p>
+      <label for="exampleInputEmail1">OBSERVACIÓN </label>
+  </div>
+  <div class="form-group col-xs-8">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1, obs2, ..."> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+                    <div class="row ">
+                      <div class="form-group col-xs-3">
+                        <label for="exampleInputEmail1">Grado de Observación </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Leve 
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Medio
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Grave
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+<div class="form-group col-xs-8">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+<div class="col-xs-12 separador"></div>
+<div class="form-group col-xs-3 text-center">
+    <div class="row">
+      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+  </div>
+</div>
+
+
+                </div>
+              </div>
+            </div>
+            <!--***************6TA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#FESERTseccion6" aria-expanded="false" aria-controls="FESERTseccion6">
+                    SISTEMA DE ENERGIA DC RECTIFICADORES MAXIMO
+                  </a>
+                </h4>
+              </div>
+              <div id="FESERTseccion6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-2">
+        <label for="exampleInputEmail1">Tipo de Bastidor </label>
+    </div>
+    <div class="checkbox col-xs-3">
+        <label>
+          <input type="checkbox"> ETSI 60X30X220
+      </label>
+  </div>
+  <div class="checkbox col-xs-3">
+    <label>
+      <input type="checkbox"> ETSI 60X90X220
+  </label>
+</div>
+  <div class="checkbox col-xs-3">
+    <label>
+      <input type="checkbox"> ETSI 60X800X220
+  </label>
+</div>
+</div>
+</div>
+<div class="col-xs-12 separador"></div>
+<div class="row ">
+      <div class="form-group col-xs-12 text-center">
+        <label for="exampleInputEmail1">VERIFICACIÓN DE LA INSTALACIÓN </label>
+    </div>
+  </div>
+  <div class="col-xs-12 separador"></div>
+  <div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-6">
+        <label for="exampleInputEmail1">El Bastidor se Encuentra Adecuadamente Anclado al Piso </label>
+    </div>
+    <div class="checkbox col-xs-2">
+        <label>
+          <input type="checkbox"> Si
+      </label>
+  </div>
+  <div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> No
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-3">
+    <p>
+      <label for="exampleInputEmail1">OBSERVACIÓN (si es "NO") </label>
+  </div>
+  <div class="form-group col-xs-8">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1, obs2, ..."> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-8">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+<div class="col-xs-12 separador"></div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-6">
+        <label for="exampleInputEmail1">La Fijación Antisísmica de Bastidores Adecuado </label>
+    </div>
+    <div class="checkbox col-xs-2">
+        <label>
+          <input type="checkbox"> Si
+      </label>
+  </div>
+  <div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> No
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-3">
+    <p>
+      <label for="exampleInputEmail1">OBSERVACIÓN (si es "NO") </label>
+  </div>
+  <div class="form-group col-xs-8">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1, obs2, ..."> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-8">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+<div class="col-xs-12 separador"></div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-6">
+        <label for="exampleInputEmail1">El Bastidor está Adecuadamente Etiquetado </label>
+    </div>
+    <div class="checkbox col-xs-2">
+        <label>
+          <input type="checkbox"> Si
+      </label>
+  </div>
+  <div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> No
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-3">
+    <p>
+      <label for="exampleInputEmail1">OBSERVACIÓN (si es "NO") </label>
+  </div>
+  <div class="form-group col-xs-8">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1, obs2, ..."> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-8">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+<div class="col-xs-12 separador"></div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-6">
+        <label for="exampleInputEmail1">Las Puertas del Bastidor Funcionan Perfectamente </label>
+    </div>
+    <div class="checkbox col-xs-2">
+        <label>
+          <input type="checkbox"> Si
+      </label>
+  </div>
+  <div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> No
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-3">
+    <p>
+      <label for="exampleInputEmail1">OBSERVACIÓN (si es "NO") </label>
+  </div>
+  <div class="form-group col-xs-8">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1, obs2, ..."> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-8">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+<div class="col-xs-12 separador"></div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-6">
+        <label for="exampleInputEmail1">El Interior del Bastidor está Limpio y Libre de Materiales Sobrantes </label>
+    </div>
+    <div class="checkbox col-xs-2">
+        <label>
+          <input type="checkbox"> Si
+      </label>
+  </div>
+  <div class="checkbox col-xs-2">
+    <label>
+      <input type="checkbox"> No
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-3">
+    <p>
+      <label for="exampleInputEmail1">OBSERVACIÓN (si es "NO") </label>
+  </div>
+  <div class="form-group col-xs-8">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1, obs2, ..."> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-8">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+<div class="col-xs-12 separador"></div>
+<div class="form-group col-xs-3 text-center">
+    <div class="row">
+      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+  </div>
+</div>
+
+
+                </div>
+              </div>
+            </div>
+            <!--***************7mA SECCION********************-->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#FESERTseccion7" aria-expanded="false" aria-controls="FESERTseccion7">
+                    BANCO DE BATERÍAS
+                  </a>
+                </h4>
+              </div>
+              <div id="FESERTseccion7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+               <div class="panel-body">
+ <div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-2">
+    <p>
+      <label for="exampleInputEmail1">Marca </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="m"> </p>
+</div>
+  <div class="form-group col-xs-2">
+    <p>
+      <label for="exampleInputEmail1">Modelo </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="m"> </p>
+   </div>
+  <div class="form-group col-xs-2">
+    <p>
+      <label for="exampleInputEmail1">Cantidad </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="s"> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-8">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-3">
+    <p>
+      <label for="exampleInputEmail1">Capacidad del Banco de Baterías en Ah </label>
+  </div>
+  <div class="form-group col-xs-8">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="ah"> </p>
+</div>
+</div>
+</div> 
+<div class="form-group col-xs-8">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+<div class="form-group col-xs-12">
+    <div class="row ">
+      <div class="form-group col-xs-4">
+        <label for="exampleInputEmail1">El Bastidor y Subastidores se Encuentra Bien Instalados </label>
+    </div>
+    <div class="checkbox col-xs-4">
+        <label>
+          <input type="checkbox"> Si
+      </label>
+  </div>
+  <div class="checkbox col-xs-4">
+    <label>
+      <input type="checkbox"> No
+  </label>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-3">
+    <p>
+      <label for="exampleInputEmail1">OBSERVACIÓN (si es "NO") </label>
+  </div>
+  <div class="form-group col-xs-8">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="obs1, obs2, ..."> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-8">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+
+<!--separador-->
+<div class="col-xs-12 separador"></div>
+<div class="form-group col-xs-3 text-center">
+    <div class="row">
+      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+  </div>
+</div>
+
+
+                </div>
+              </div>
+            </div>
+            <!--***************8vA SECCION********************-->
+             <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#FESERTseccion8" aria-expanded="false" aria-controls="FESERTseccion8">
+                    UPS
+                  </a>
+                </h4>
+              </div>
+              <div id="FESERTseccion8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+               <div class="panel-body">
+<div class="form-group col-xs-12">
+<div class="row ">
+  <div class="form-group col-xs-2">
+    <p>
+      <label for="exampleInputEmail1">Marca </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="m"> </p>
+</div>
+  <div class="form-group col-xs-2">
+    <p>
+      <label for="exampleInputEmail1">Modelo </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="m"> </p>
+   </div>
+  <div class="form-group col-xs-2">
+    <p>
+      <label for="exampleInputEmail1">Cantidad </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="s"> </p>
+</div>
+<div class="form-group col-xs-2">
+    <p>
+      <label for="exampleInputEmail1">Voltaje</label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="s"> </p>
+</div>
+<div class="form-group col-xs-2">
+    <p>
+      <label for="exampleInputEmail1">Amperaje </label>
+  </div>
+  <div class="form-group col-xs-2">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="s"> </p>
+</div>
+</div>
+</div>
+<div class="form-group col-xs-8">
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> FOTOS
+  </button>
+</div>
+
+<!--separador-->
+<div class="col-xs-12 separador"></div>
+<div class="form-group col-xs-3 text-center">
+    <div class="row">
+      <a href="#" class="list-group-item list-group-item-success">GUARDAR</a>
+  </div>
+</div>
+ 
+
+                </div>
+              </div>
+            </div>
+
+           
+                  <!-- fin seccion-->
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <!--************************************FIN 3ER POPUP-->
+
+
+    </div>
+  </div>
+</body>
+
+</html>

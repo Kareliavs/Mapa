@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crear Reporte</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/jquery-accordion-menu.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="Header">
+    <div class="container">
+      <div class="row">
+        <div class="Header-menu">
+          <i class="fa fa-1x fa-bars mr-3" aria-hidden="true"></i>
+          <figure>
+            <img src="" alt="">
+          </figure>
+          <ul>
+            <li>Daniel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="container-nav-down">
+    <div id="jquery-accordion-menu" class="jquery-accordion-menu">
+      <div class="jquery-accordion-menu-header">
+        <span>Menu</span>
+        <i class="fa fa-2x fa-angle-left" aria-hidden="true" id="menu-toggle"></i>
+      </div>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span>Inicio</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-user-plus"> </i>
+            <span>Agregar usuario</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-user-plus"> </i>
+            <span>Modificar usuario</span>
+          </a>
+        </li>
+
+        <li  class="active">
+          <a href="#">
+            <i class="fa fa-list-ul"> </i>
+            <span>Ver usuarios</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-star"> </i>
+            <span>Ver formularios</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-star"> </i>
+            <span>Ver reportes</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-list-ul"> </i>
+            <span>Ver formularios en mapa</span>
+          </a>
+        </li>
+      </ul>
+      <div class="jquery-accordion-menu-footer">
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="container-down">
+    <section id="container-main" class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="display-4 title">Usuarios</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <form class="">
+            <div class="form-group col-xs-6">
+              <label for="exampleInputEmail1">Cargo</label>
+              <select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+
+
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+            <table class="table table-striped"> <thead> <tr> <th>#</th> <th>Usuario</th> <th>DNI</th> <th>Especiapidad</th> <th>Cargo</th><th>Contraseña</th><th>Estado</th><th>Correo</th></tr> </thead> <tbody> <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> <td>cargo1</td> <td>123456789</td> <td>A</td> <td>Marco@cymtel.com</td> </tr> <tr> <th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> <td>cargo2</td> <td>134556789</td> <td>I</td> <td>Jacob@cymtel.com</td> </tr> <tr> <th scope="row">3</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> <td>cargo2</td> <td>12375600</td> <td>A</td> <td>Larry@cymtel.com</td> </tr> <tr> <th scope="row">4</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> <td>cargo3</td> <td>12375600</td> <td>E</td> <td>Larry@cymtel.com</td> </tr> <tr> <th scope="row">5</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> <td>cargo3</td> <td>12375600</td> <td>A</td> <td>Larry@cymtel.com</td> </tr> <tr> <th scope="row">6</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> <td>cargo3</td> <td>12375600</td> <td>I</td> <td>Larry@cymtel.com</td> </tr> <tr> <th scope="row">7</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> <td>cargo3</td> <td>12375600</td> <td>E</td> <td>Larry@cymtel.com</td> </tr> <tr> <th scope="row">8</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> <td>cargo2</td> <td>12375600</td> <td>A</td> <td>Larry@cymtel.com</td> </tr> <tr> <th scope="row">9</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> <td>cargo1</td> <td>12375600</td> <td>A</td> <td>Larry@cymtel.com</td> </tr> <tr> <th scope="row">10</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> <td>cargo3</td> <td>12375600</td> <td>A</td> <td>Larry@cymtel.com</td> </tr> </tbody> </table>
+        </div>
+      </div>
+      <div class="form-group col-xs-12 text-center">
+          <button type="submit" class="btn btn-default">Generar PDF</button>
+        </div>
+    </section>
+  </section>
+
+
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
